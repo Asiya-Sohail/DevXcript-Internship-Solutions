@@ -1,0 +1,33 @@
+.recommended-flex {
+  display: flex;
+  margin-left: 20rem;
+}
+
+.recommended-title {
+  margin-left: 20rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* Responsive: allow wrapping and reduce left offset on small screens */
+@media (max-width: 1024px) {
+  .recommended-flex,
+  .recommended-title {
+    margin-left: 16rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .recommended-title {
+    margin-left: 0;
+    padding: 0 1rem;
+  }
+
+  .recommended-flex {
+    margin-left: 0;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
